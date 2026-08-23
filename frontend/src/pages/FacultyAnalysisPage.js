@@ -16,7 +16,7 @@ function FacultyAnalysisPage() {
       setLoading(true);
 
       const res = await axios.get(
-        `http://localhost:5000/api/results/analysis/${testId}`,
+        `https://one-mocktest-system.onrender.com/api/results/analysis/${testId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
