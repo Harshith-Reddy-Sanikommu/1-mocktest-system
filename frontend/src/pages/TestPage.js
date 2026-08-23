@@ -23,7 +23,7 @@ function TestPage() {
   /* LOAD TESTS */
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/tests", {
+      .get("https://one-mocktest-system.onrender.com/api/tests", {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -68,7 +68,7 @@ function TestPage() {
       console.log("SUBMIT PAYLOAD:", payload);
 
       const res = await axios.post(
-        "http://localhost:5000/api/attempts/submit",
+        "https://one-mocktest-system.onrender.com/api/attempts/submit",
         payload,
         {
           headers: {
