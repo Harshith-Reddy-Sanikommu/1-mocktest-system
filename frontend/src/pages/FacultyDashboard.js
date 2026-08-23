@@ -17,7 +17,7 @@ function FacultyDashboard() {
       setLoading(true);
 
       const res = await axios.get(
-        `http://localhost:5000/api/tests/faculty/${facultyId}`,
+        `https://one-mocktest-system.onrender.com/api/tests/faculty/${facultyId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -46,7 +46,7 @@ function FacultyDashboard() {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/tests/${testId}`, {
+      await axios.delete(`https://one-mocktest-system.onrender.com/api/tests/${testId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
